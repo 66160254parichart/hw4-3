@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ระบบจัดการนัดหมาย</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="appointment-system">
+      <h1>ระบบจัดการนัดหมาย</h1>
+    </div>
+
+    <!-- Form สำหรับสร้างนัดหมาย -->
+    <div class="form-container">
+      <h2>สร้างนัดหมายใหม่</h2>
+      <form id="appointmentForm">
+        <label>
+          หัวข้อ:
+          <input type="text" id="title" required /> </label
+        ><br /><br />
+        <label>
+          วันที่:
+          <input type="date" id="date" required /> </label
+        ><br /><br />
+        <label>
+          เวลาเริ่ม:
+          <input type="time" id="startTime" required /> </label
+        ><br /><br />
+        <label>
+          เวลาสิ้นสุด:
+          <input type="time" id="endTime" required /> </label
+        ><br /><br />
+        <button type="submit">สร้างนัดหมาย</button>
+      </form>
+    </div>
+
+    <div class="appointments-container">
+      <h2>รายการนัดหมาย</h2>
+    </div>
+
+    <!-- แสดงรายการนัดหมาย -->
+    <div class="appointments-container">
+      <div id="appointmentsList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

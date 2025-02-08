@@ -1,0 +1,127 @@
+body.form-container {
+  display: grid;
+  place-items: center; /* จัดให้อยู่ตรงกลางทั้งแนวตั้งและแนวนอน */
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f6f9;
+}
+
+.appointment-system {
+  color: #000000;
+  text-align: center;
+}
+
+.appointmentForm {
+  background-color: #fff; /* พื้นหลังสีขาว */
+  padding: 20px; /* เพิ่ม padding ภายในกล่อง */
+  border-radius: 10px; /* มุมโค้งมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+  width: 100%;
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* เพิ่ม margin ด้านล่าง */
+}
+
+/* สไตล์หัวข้อในฟอร์ม */
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* สไตล์สำหรับป้าย label */
+form label {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+  display: block;
+}
+
+/* สไตล์สำหรับ input */
+form input {
+  width: 100%;
+  padding: 10px; /* ลด padding เพื่อลดช่องว่างภายในกล่องข้อความ */
+  margin: 5px 0; /* ลดช่องว่างระหว่างกล่องข้อความ */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+/* การเปลี่ยนสีขอบเมื่อโฟกัส */
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ปุ่มสร้างนัดหมาย */
+form button {
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* การเปลี่ยนสีของปุ่มเมื่อวางเมาส์ */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/*กล่องข้อความนัดหมายห*/
+.appointments-container{
+  margin-top: 20px;
+  
+}
+/* สีสำหรับรายการปกติ */
+.appointment {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ทำให้รายการที่ถูกยกเลิกมีขีดค่าสีแดง */
+.appointment.cancelled {
+  color: red;
+  text-decoration: line-through;
+  background-color: #f8d7da; /* พื้นหลังสีแดงอ่อน */
+  border: 1px solid #f5c6cb;
+}
+
+
+/* สีสำหรับรายการที่มีความซ้ำซ้อน */
+.appointment.conflict {
+  background-color: #fff3cd;
+  color: #856404;
+  border-color: #ffeeba;
+}
+
+.appointment strong {
+  font-size: 1.1em;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
